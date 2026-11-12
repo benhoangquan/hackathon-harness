@@ -3,5 +3,5 @@
     "p1": { "login": "benhoangquan", "role": "architect" },
     "p2": { "login": "Nas01010101", "role": "builder" }
   },
-  "contract_owners": ["p1"]
+  "contract_owners": ["p1", "p2"]
 }
