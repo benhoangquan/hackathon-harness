@@ -625,7 +625,8 @@ def claim_issue(root, team, cfg, me, n, resume=False):
         f.write("PORT_OFFSET=%d\n" % (task["slot"] * 10))
     if run_check(wt, "setup") != 0:
         raise Fail(PRECOND, "check.sh setup failed in %s; fix and re-run claim.sh %d" % (wt, n))
-    info("Claimed #%d. Next:\n  cd ../%s && claude" % (n, os.path.basename(wt)))
+    info("Claimed #%d. Next:\n  cd ../%s, then start your agent (claude, codex, gemini, "
+         "cursor)" % (n, os.path.basename(wt)))
     return wt
 
 
